@@ -1,0 +1,22 @@
+{
+  "name": "fixedfloat",
+  "version": "1.0.0",
+  "description": "API wrapper for FixedFloat Exchange",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devguru008/fixedfloat.git"
+  },
+  "keywords": [
+    "fixedfloat",
+    "exchange",
+    "swap",
+    "api",
+    "crypto"
+  ],
+  "author": "devguru008",
+  "license": "ISC",
+  "dependencies": {
+    "node-fetch": "^2.6.13"
+  }
+}
