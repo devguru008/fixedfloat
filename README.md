@@ -33,6 +33,7 @@ const ff = new FixedFloat('API_KEY', 'API_SECRET');
 * [.getOrder(id, token)](#getorderid-token)
 * [.setEmergency(id, token, choice, address, tag)](#setemergencyid-token-choice-address-tag)
 * [.createOrder(fromCcy, toCcy, toAddress, amount, direction, type, tag)](#createorderfromccy-toccy-toaddress-amount-direction-type-tag)
+* [.getQRCodes(id, token)](#getqrcodesid-token)
 
 ### constructor(settings)
 
@@ -84,6 +85,14 @@ Creating an order for the exchange of selected currencies with a specified amoun
 
 ```js
 const response = await ff.createOrder('ETH', 'BTC', 'BTC address', 10, 'from', 'float');
+```
+
+### .getQRCodes(id, token)
+
+Getting a list of images of QR codes for an order. [Official docs](https://fixedfloat.com/api#method_qr)
+
+```js
+const response = await ff.getQRCodes('ORDER_ID', 'ORDER_TOKEN');
 ```
 
 ## License
